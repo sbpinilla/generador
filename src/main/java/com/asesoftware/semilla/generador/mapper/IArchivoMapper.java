@@ -16,7 +16,6 @@ public interface IArchivoMapper {
 	
 	public ArchivoDTO entityToDto (ArchivoEntity entity);
 	
-	
 	public ArchivoEntity dtoToEntity ( ArchivoDTO dto);
 	
 }
