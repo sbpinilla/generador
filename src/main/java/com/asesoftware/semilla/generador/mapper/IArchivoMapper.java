@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
+import org.mapstruct.Mappings;
 
 import com.asesoftware.semilla.generador.dto.ArchivoDTO;
 import com.asesoftware.semilla.generador.entity.ArchivoEntity;
@@ -11,11 +12,23 @@ import com.asesoftware.semilla.generador.entity.ArchivoEntity;
 @Mapper(componentModel = "spring")
 public interface IArchivoMapper {
 
-	//@Mapping(source = "identificador",target = "id")
-	public List<ArchivoDTO> listaEntityToDto (List<ArchivoEntity> listEntity);
 	
-	public ArchivoDTO entityToDto (ArchivoEntity entity);
+	@Mappings({
+		@Mapping(source = "id",target = "identificador" ),
+		@Mapping(source = "nombre",target = "archivo" )
+	})
+	public ArchivoDTO entityToDto(ArchivoEntity archivoEntity);
 	
-	public ArchivoEntity dtoToEntity ( ArchivoDTO dto);
+	@Mappings({
+		@Mapping(source = "identificador",target = "id" ),
+		@Mapping(source = "archivo",target = "nombre" )
+	})
+	public ArchivoEntity dtoToEntity (ArchivoDTO archivoDTO);
+	
+	public List<ArchivoDTO> listEntityToDto(List<ArchivoEntity> archivoEntity);
+	
+	public List<ArchivoEntity> listDtoToEntity(List<ArchivoDTO> archivoDTOs);
+	
 	
 }
+

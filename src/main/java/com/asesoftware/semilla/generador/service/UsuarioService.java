@@ -4,8 +4,13 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+
+import com.asesoftware.semilla.generador.dto.ResponseDTO;
+import com.asesoftware.semilla.generador.dto.UsuarioDTO;
 import com.asesoftware.semilla.generador.entity.UsuarioEntity;
+import com.asesoftware.semilla.generador.mapper.IUsuarioMapper;
 import com.asesoftware.semilla.generador.repository.IUsuarioRepository;
 
 @Service
@@ -15,49 +20,72 @@ public class UsuarioService implements IUsuarioService {
 	@Autowired
 	private IUsuarioRepository usuarioRepository;
 	
+	@Autowired
+	private IUsuarioMapper mapperUsuario;
+	
 
 	@Override
-	public List<UsuarioEntity> getAll() {
+	public ResponseDTO getAll() {
 		
-		return usuarioRepository.findAll();
+		return new ResponseDTO( mapperUsuario.listEntityToDto( usuarioRepository.findAll()), true, "ok", HttpStatus.OK);
 	}
 
 	@Override
-	public UsuarioEntity getUsuarioById(Integer id) {
-		
+	public ResponseDTO getUsuarioById(Integer id) {
+				
 		Optional<UsuarioEntity> optional = usuarioRepository.findById(id);
 		
 		if (optional.isPresent()) {
-			return optional.get() ;
+			
+			return  new ResponseDTO(optional.get(), true, "ok", HttpStatus.OK); 
+			
 		}else {
-			return null;
+			return  new ResponseDTO(null, false, "usuario no encontrado", HttpStatus.OK); 
 		}
 		
 		
 	}
 
 	@Override
-	public UsuarioEntity createUser(UsuarioEntity usuarioEntity) {
+	public ResponseDTO createUser(UsuarioDTO usuarioDTO) {
 		
 		try {
-			return usuarioRepository.save(usuarioEntity);
+			
+			UsuarioEntity usuarioEntity = mapperUsuario.dtoToEntity(usuarioDTO);
+			
+			usuarioRepository.save(usuarioEntity);
+			
+			
+			
+			return new ResponseDTO(mapperUsuario.entityToDto(usuarioEntity), true, "ok", HttpStatus.OK); 
 		}catch (Exception e) {
-			return null;
+			return new ResponseDTO(null, false, "No se puede crear el usuario", HttpStatus.OK); 
 		}
 		
 	}
 
 	@Override
-	public UsuarioEntity updateUser(UsuarioEntity usuarioEntity) {
+	public ResponseDTO updateUser(UsuarioDTO usuarioDTO) {
 		
 		
-		return usuarioRepository.save(usuarioEntity);
+		UsuarioEntity usuarioEntity = mapperUsuario.dtoToEntity(usuarioDTO);
+		
+		 usuarioRepository.save(usuarioEntity);
+		 
+		return new ResponseDTO(mapperUsuario.entityToDto(usuarioEntity), true, "ok", HttpStatus.OK);
 	}
 
 	@Override
-	public void deleteUser(Integer id) {
+	public ResponseDTO deleteUser(Integer id) {
 		
-		usuarioRepository.deleteById(id);
+		
+		try {
+			usuarioRepository.deleteById(id);
+			return  new ResponseDTO(null, true, "usuario eliminado", HttpStatus.OK); 
+		}catch (Exception e) {
+			return  new ResponseDTO(null, false, "el usuario no se puede eliminar", HttpStatus.OK); 
+		}
+		
 		
 	}
 

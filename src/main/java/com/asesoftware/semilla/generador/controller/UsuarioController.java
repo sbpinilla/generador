@@ -12,6 +12,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.asesoftware.semilla.generador.dto.ResponseDTO;
+import com.asesoftware.semilla.generador.dto.UsuarioDTO;
 import com.asesoftware.semilla.generador.entity.UsuarioEntity;
 import com.asesoftware.semilla.generador.service.IUsuarioService;
 
@@ -26,7 +29,7 @@ public class UsuarioController {
 	// listar todos
 	
 	@GetMapping(path = "/all")
-	public List<UsuarioEntity> getAll() {
+	public ResponseDTO getAll() {
 		
 		return usuarioService.getAll();
 	}
@@ -34,13 +37,13 @@ public class UsuarioController {
 	// listar uno
 	
 	@GetMapping(path = "/usuario/{id}")
-	public UsuarioEntity getUsuarioById(@PathVariable Integer id) {
+	public ResponseDTO getUsuarioById(@PathVariable Integer id) {
 		
 		return usuarioService.getUsuarioById(id);
 	}
 	
 	@GetMapping(path = "/parametro")
-	public UsuarioEntity getUsuarioParametroById(@RequestParam Integer id) {
+	public ResponseDTO getUsuarioParametroById(@RequestParam Integer id) {
 		
 		return usuarioService.getUsuarioById(id);
 	}
@@ -49,7 +52,7 @@ public class UsuarioController {
 	// crear 
 	
 	@PostMapping(path = "/crear", consumes = "application/json",produces = "application/json")
-	public UsuarioEntity createUser(@RequestBody UsuarioEntity entity) {
+	public ResponseDTO createUser(@RequestBody UsuarioDTO entity) {
 		
 		return usuarioService.createUser(entity); 
 	}
@@ -58,7 +61,7 @@ public class UsuarioController {
 	// editar
 	
 	@PostMapping(path = "/editar", consumes = "application/json",produces = "application/json")
-	public UsuarioEntity editarUser(@RequestBody UsuarioEntity entity) {
+	public ResponseDTO editarUser(@RequestBody UsuarioDTO entity) {
 		
 		return usuarioService.updateUser(entity); 
 	}
@@ -66,10 +69,9 @@ public class UsuarioController {
 	
 	// eliminar 
 	@GetMapping(path = "/delete/{id}")
-	public void eliminarUsuario(@PathVariable Integer id) {
+	public ResponseDTO eliminarUsuario(@PathVariable Integer id) {
 		
-		
-		usuarioService.deleteUser(id);
+		return usuarioService.deleteUser(id);
 	}
 	
 	

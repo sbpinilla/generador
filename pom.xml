@@ -16,13 +16,14 @@
 	<properties>
 		<java.version>1.8</java.version>
 		 <org.mapstruct.version>1.4.2.Final</org.mapstruct.version>
+		 <version.projectlombok>1.18.20</version.projectlombok>
 	</properties>
 	<dependencies>
 	
 	<dependency>
 		<groupId>org.projectlombok</groupId>
 		<artifactId>lombok</artifactId>
-		<version>1.18.20</version>
+		<version>${version.projectlombok}</version>
 		<scope>provided</scope>
 	</dependency>
 	
@@ -81,7 +82,7 @@
                     <path>
 		<groupId>org.projectlombok</groupId>
 		<artifactId>lombok</artifactId>
-		<version>1.18.20</version>
+		<version>${version.projectlombok}</version>
 	</path>
                     <!-- other annotation processors -->
                 </annotationProcessorPaths>

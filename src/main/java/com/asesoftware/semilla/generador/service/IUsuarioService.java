@@ -2,21 +2,24 @@ package com.asesoftware.semilla.generador.service;
 
 
 import java.util.List;
+
+import com.asesoftware.semilla.generador.dto.ResponseDTO;
+import com.asesoftware.semilla.generador.dto.UsuarioDTO;
 import com.asesoftware.semilla.generador.entity.UsuarioEntity;
 
 
 public interface IUsuarioService {
 	
 	
-	public List<UsuarioEntity> getAll();
+	public ResponseDTO getAll();
 	
-	public UsuarioEntity getUsuarioById(Integer id);
+	public ResponseDTO getUsuarioById(Integer id);
 	
-	public UsuarioEntity createUser(UsuarioEntity usuarioEntity);
+	public ResponseDTO createUser(UsuarioDTO UsuarioDTO);
 	
-	public UsuarioEntity updateUser(UsuarioEntity usuarioEntity);
+	public ResponseDTO updateUser(UsuarioDTO usuarioDTO);
 	
-	public void deleteUser(Integer id);
+	public ResponseDTO deleteUser(Integer id);
 	
 
 }
