@@ -20,5 +20,31 @@ public class ArchivoDTO {
 	
 	@JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "HH:mm:ss",timezone = "America/New_York")
 	private Date hora;
+	
+	private String nombreUsuario;
+
+	public ArchivoDTO() {
+		
+	}
+	
+	public ArchivoDTO(Integer identificador, 
+			String archivo, 
+			Integer usuarioCreador, 
+			Date fecha, 
+			Date hora,
+			String nombreUsuario) {
+		
+		this.identificador = identificador;
+		this.archivo = archivo;
+		this.usuarioCreador = usuarioCreador;
+		this.fecha = fecha;
+		this.hora = hora;
+		this.nombreUsuario = nombreUsuario;
+	}
+	
+	
+	
+	
+	
 
 }

@@ -1,0 +1,214 @@
+2021-06-11 09:20:44.091  INFO 7508 --- [restartedMain] c.a.s.generador.GeneradorApplication     : Starting GeneradorApplication using Java 1.8.0_291 on ASW3344 with PID 7508 (C:\Users\spinilla\Documents\workspace\generador\target\classes started by spinilla in C:\Users\spinilla\Documents\workspace\generador)
+2021-06-11 09:20:44.093  INFO 7508 --- [restartedMain] c.a.s.generador.GeneradorApplication     : No active profile set, falling back to default profiles: default
+2021-06-11 09:20:44.159  INFO 7508 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-06-11 09:20:44.159  INFO 7508 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-06-11 09:20:44.902  INFO 7508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-11 09:20:44.990  INFO 7508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 2 JPA repository interfaces.
+2021-06-11 09:20:45.627  INFO 7508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9003 (http)
+2021-06-11 09:20:45.637  INFO 7508 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-11 09:20:45.638  INFO 7508 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-11 09:20:45.729  INFO 7508 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-11 09:20:45.730  INFO 7508 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1570 ms
+2021-06-11 09:20:45.924  INFO 7508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-11 09:20:46.105  INFO 7508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-11 09:20:46.162  INFO 7508 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-11 09:20:46.271  INFO 7508 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-06-11 09:20:46.536  INFO 7508 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-11 09:20:46.729  INFO 7508 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-06-11 09:20:47.449  INFO 7508 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-11 09:20:47.459  INFO 7508 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-11 09:20:47.804  WARN 7508 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-11 09:20:48.113  INFO 7508 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-06-11 09:20:48.164  INFO 7508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9003 (http) with context path ''
+2021-06-11 09:20:48.172  INFO 7508 --- [restartedMain] c.a.s.generador.GeneradorApplication     : Started GeneradorApplication in 4.584 seconds (JVM running for 5.743)
+2021-06-11 09:20:48.174  INFO 7508 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-11 09:20:48.175  INFO 7508 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-11 09:21:26.142  INFO 7508 --- [http-nio-9003-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-11 09:21:26.142  INFO 7508 --- [http-nio-9003-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-11 09:21:26.143  INFO 7508 --- [http-nio-9003-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-06-11 09:21:26.167  INFO 7508 --- [http-nio-9003-exec-2] c.a.s.g.controller.ArchivoController     : consultarTodos ingreso
+2021-06-11 09:23:23.450  INFO 7508 --- [Thread-8] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-06-11 09:23:23.701  INFO 7508 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-11 09:23:23.704  INFO 7508 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-06-11 09:23:23.717  INFO 7508 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-06-11 09:23:23.792  INFO 7508 --- [restartedMain] c.a.s.generador.GeneradorApplication     : Starting GeneradorApplication using Java 1.8.0_291 on ASW3344 with PID 7508 (C:\Users\spinilla\Documents\workspace\generador\target\classes started by spinilla in C:\Users\spinilla\Documents\workspace\generador)
+2021-06-11 09:23:23.792  INFO 7508 --- [restartedMain] c.a.s.generador.GeneradorApplication     : No active profile set, falling back to default profiles: default
+2021-06-11 09:23:23.988  INFO 7508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-11 09:23:24.003  INFO 7508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces.
+2021-06-11 09:23:24.128  INFO 7508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9003 (http)
+2021-06-11 09:23:24.129  INFO 7508 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-11 09:23:24.129  INFO 7508 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-11 09:23:24.142  INFO 7508 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-11 09:23:24.142  INFO 7508 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 348 ms
+2021-06-11 09:23:24.169  INFO 7508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-06-11 09:23:24.173  INFO 7508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-06-11 09:23:24.178  INFO 7508 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-11 09:23:24.182  INFO 7508 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-06-11 09:23:24.210  INFO 7508 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-11 09:23:24.210  INFO 7508 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-11 09:23:24.302  WARN 7508 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-11 09:23:24.392  INFO 7508 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-06-11 09:23:24.401  INFO 7508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9003 (http) with context path ''
+2021-06-11 09:23:24.405  INFO 7508 --- [restartedMain] c.a.s.generador.GeneradorApplication     : Started GeneradorApplication in 0.643 seconds (JVM running for 161.975)
+2021-06-11 09:23:24.405  INFO 7508 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-11 09:23:24.407  INFO 7508 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-06-11 09:23:24.408  INFO 7508 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-11 09:23:30.111  INFO 7508 --- [http-nio-9003-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-11 09:23:30.112  INFO 7508 --- [http-nio-9003-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-11 09:23:30.113  INFO 7508 --- [http-nio-9003-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-06-11 09:23:30.116  INFO 7508 --- [http-nio-9003-exec-2] c.a.s.g.controller.ArchivoController     : consultarTodos ingreso
+2021-06-11 09:23:45.363  INFO 7508 --- [Thread-15] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-06-11 09:23:45.626  INFO 7508 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-11 09:23:45.627  INFO 7508 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-06-11 09:23:45.629  INFO 7508 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-06-11 09:23:45.708  INFO 7508 --- [restartedMain] c.a.s.generador.GeneradorApplication     : Starting GeneradorApplication using Java 1.8.0_291 on ASW3344 with PID 7508 (C:\Users\spinilla\Documents\workspace\generador\target\classes started by spinilla in C:\Users\spinilla\Documents\workspace\generador)
+2021-06-11 09:23:45.709  INFO 7508 --- [restartedMain] c.a.s.generador.GeneradorApplication     : No active profile set, falling back to default profiles: default
+2021-06-11 09:23:45.889  INFO 7508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-11 09:23:45.906  INFO 7508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
+2021-06-11 09:23:45.986  INFO 7508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9003 (http)
+2021-06-11 09:23:45.987  INFO 7508 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-11 09:23:45.987  INFO 7508 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-11 09:23:46.000  INFO 7508 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-11 09:23:46.000  INFO 7508 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 289 ms
+2021-06-11 09:23:46.022  INFO 7508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2021-06-11 09:23:46.025  INFO 7508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2021-06-11 09:23:46.031  INFO 7508 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-11 09:23:46.035  INFO 7508 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-06-11 09:23:46.068  INFO 7508 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-11 09:23:46.068  INFO 7508 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-11 09:23:46.144  WARN 7508 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-11 09:23:46.219  INFO 7508 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-06-11 09:23:46.226  INFO 7508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9003 (http) with context path ''
+2021-06-11 09:23:46.231  INFO 7508 --- [restartedMain] c.a.s.generador.GeneradorApplication     : Started GeneradorApplication in 0.549 seconds (JVM running for 183.801)
+2021-06-11 09:23:46.232  INFO 7508 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-11 09:23:46.233  INFO 7508 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-06-11 09:23:46.233  INFO 7508 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-11 09:23:52.437  INFO 7508 --- [http-nio-9003-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-11 09:23:52.438  INFO 7508 --- [http-nio-9003-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-11 09:23:52.439  INFO 7508 --- [http-nio-9003-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-06-11 09:23:52.442  INFO 7508 --- [http-nio-9003-exec-2] c.a.s.g.controller.ArchivoController     : consultarTodos ingreso
+2021-06-11 09:23:53.161  INFO 7508 --- [http-nio-9003-exec-3] c.a.s.g.controller.ArchivoController     : consultarTodos ingreso
+2021-06-11 09:24:42.094  INFO 7508 --- [Thread-22] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-06-11 09:24:42.351  INFO 7508 --- [Thread-22] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-11 09:24:42.352  INFO 7508 --- [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2021-06-11 09:24:42.354  INFO 7508 --- [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2021-06-11 09:24:42.441  INFO 7508 --- [restartedMain] c.a.s.generador.GeneradorApplication     : Starting GeneradorApplication using Java 1.8.0_291 on ASW3344 with PID 7508 (C:\Users\spinilla\Documents\workspace\generador\target\classes started by spinilla in C:\Users\spinilla\Documents\workspace\generador)
+2021-06-11 09:24:42.441  INFO 7508 --- [restartedMain] c.a.s.generador.GeneradorApplication     : No active profile set, falling back to default profiles: default
+2021-06-11 09:24:42.628  INFO 7508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-11 09:24:42.645  INFO 7508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
+2021-06-11 09:24:42.758  INFO 7508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9003 (http)
+2021-06-11 09:24:42.759  INFO 7508 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-11 09:24:42.759  INFO 7508 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-11 09:24:42.775  INFO 7508 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-11 09:24:42.775  INFO 7508 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 331 ms
+2021-06-11 09:24:42.799  INFO 7508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2021-06-11 09:24:42.803  INFO 7508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2021-06-11 09:24:42.808  INFO 7508 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-11 09:24:42.813  INFO 7508 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-06-11 09:24:42.839  INFO 7508 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-11 09:24:42.840  INFO 7508 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-11 09:24:42.925  WARN 7508 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-11 09:24:42.991  INFO 7508 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-06-11 09:24:43.005  INFO 7508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9003 (http) with context path ''
+2021-06-11 09:24:43.008  INFO 7508 --- [restartedMain] c.a.s.generador.GeneradorApplication     : Started GeneradorApplication in 0.603 seconds (JVM running for 240.579)
+2021-06-11 09:24:43.009  INFO 7508 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-11 09:24:43.010  INFO 7508 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-06-11 09:24:43.011  INFO 7508 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-11 09:26:05.906  INFO 7508 --- [Thread-29] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-06-11 09:26:06.163  INFO 7508 --- [Thread-29] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-11 09:26:06.164  INFO 7508 --- [Thread-29] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2021-06-11 09:26:06.166  INFO 7508 --- [Thread-29] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2021-06-11 09:26:06.248  INFO 7508 --- [restartedMain] c.a.s.generador.GeneradorApplication     : Starting GeneradorApplication using Java 1.8.0_291 on ASW3344 with PID 7508 (C:\Users\spinilla\Documents\workspace\generador\target\classes started by spinilla in C:\Users\spinilla\Documents\workspace\generador)
+2021-06-11 09:26:06.248  INFO 7508 --- [restartedMain] c.a.s.generador.GeneradorApplication     : No active profile set, falling back to default profiles: default
+2021-06-11 09:26:06.430  INFO 7508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-11 09:26:06.446  INFO 7508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
+2021-06-11 09:26:06.551  INFO 7508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9003 (http)
+2021-06-11 09:26:06.552  INFO 7508 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-11 09:26:06.552  INFO 7508 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-11 09:26:06.564  INFO 7508 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-11 09:26:06.564  INFO 7508 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 313 ms
+2021-06-11 09:26:06.585  INFO 7508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2021-06-11 09:26:06.589  INFO 7508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2021-06-11 09:26:06.594  INFO 7508 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-11 09:26:06.598  INFO 7508 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-06-11 09:26:06.621  INFO 7508 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-11 09:26:06.621  INFO 7508 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-11 09:26:06.698  WARN 7508 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-11 09:26:06.763  INFO 7508 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-06-11 09:26:06.777  INFO 7508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9003 (http) with context path ''
+2021-06-11 09:26:06.780  INFO 7508 --- [restartedMain] c.a.s.generador.GeneradorApplication     : Started GeneradorApplication in 0.558 seconds (JVM running for 324.35)
+2021-06-11 09:26:06.781  INFO 7508 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-11 09:26:06.782  INFO 7508 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-06-11 09:26:06.783  INFO 7508 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-11 09:26:53.401  INFO 7508 --- [Thread-36] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-06-11 09:26:53.859  INFO 7508 --- [Thread-36] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-11 09:26:53.860  INFO 7508 --- [Thread-36] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2021-06-11 09:26:53.864  INFO 7508 --- [Thread-36] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2021-06-11 09:26:53.992  INFO 7508 --- [restartedMain] c.a.s.generador.GeneradorApplication     : Starting GeneradorApplication using Java 1.8.0_291 on ASW3344 with PID 7508 (C:\Users\spinilla\Documents\workspace\generador\target\classes started by spinilla in C:\Users\spinilla\Documents\workspace\generador)
+2021-06-11 09:26:53.993  INFO 7508 --- [restartedMain] c.a.s.generador.GeneradorApplication     : No active profile set, falling back to default profiles: default
+2021-06-11 09:26:54.235  INFO 7508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-11 09:26:54.250  INFO 7508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces.
+2021-06-11 09:26:54.353  INFO 7508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9003 (http)
+2021-06-11 09:26:54.354  INFO 7508 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-11 09:26:54.354  INFO 7508 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-11 09:26:54.366  INFO 7508 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-11 09:26:54.367  INFO 7508 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 368 ms
+2021-06-11 09:26:54.388  INFO 7508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2021-06-11 09:26:54.392  INFO 7508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2021-06-11 09:26:54.397  INFO 7508 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-11 09:26:54.401  INFO 7508 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-06-11 09:26:54.423  INFO 7508 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-11 09:26:54.423  INFO 7508 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-11 09:26:54.499  WARN 7508 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-11 09:26:54.559  INFO 7508 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-06-11 09:26:54.572  INFO 7508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9003 (http) with context path ''
+2021-06-11 09:26:54.575  INFO 7508 --- [restartedMain] c.a.s.generador.GeneradorApplication     : Started GeneradorApplication in 0.636 seconds (JVM running for 372.146)
+2021-06-11 09:26:54.576  INFO 7508 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-11 09:26:54.577  INFO 7508 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-06-11 09:26:54.578  INFO 7508 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-11 09:26:56.010  INFO 7508 --- [Thread-43] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-06-11 09:26:56.264  INFO 7508 --- [Thread-43] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-11 09:26:56.265  INFO 7508 --- [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2021-06-11 09:26:56.266  INFO 7508 --- [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2021-06-11 09:26:56.338  INFO 7508 --- [restartedMain] c.a.s.generador.GeneradorApplication     : Starting GeneradorApplication using Java 1.8.0_291 on ASW3344 with PID 7508 (C:\Users\spinilla\Documents\workspace\generador\target\classes started by spinilla in C:\Users\spinilla\Documents\workspace\generador)
+2021-06-11 09:26:56.338  INFO 7508 --- [restartedMain] c.a.s.generador.GeneradorApplication     : No active profile set, falling back to default profiles: default
+2021-06-11 09:26:56.504  INFO 7508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-11 09:26:56.518  INFO 7508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+2021-06-11 09:26:56.589  INFO 7508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9003 (http)
+2021-06-11 09:26:56.590  INFO 7508 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-11 09:26:56.590  INFO 7508 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-11 09:26:56.603  INFO 7508 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-11 09:26:56.603  INFO 7508 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 263 ms
+2021-06-11 09:26:56.623  INFO 7508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2021-06-11 09:26:56.626  INFO 7508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2021-06-11 09:26:56.631  INFO 7508 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-11 09:26:56.634  INFO 7508 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-06-11 09:26:56.655  INFO 7508 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-11 09:26:56.655  INFO 7508 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-11 09:26:56.731  WARN 7508 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-11 09:26:56.794  INFO 7508 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-06-11 09:26:56.808  INFO 7508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9003 (http) with context path ''
+2021-06-11 09:26:56.811  INFO 7508 --- [restartedMain] c.a.s.generador.GeneradorApplication     : Started GeneradorApplication in 0.498 seconds (JVM running for 374.381)
+2021-06-11 09:26:56.812  INFO 7508 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-11 09:26:56.813  INFO 7508 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-06-11 09:26:56.814  INFO 7508 --- [restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-11 09:27:06.201  INFO 12248 --- [main] c.a.s.g.GeneradorApplicationTests        : Starting GeneradorApplicationTests using Java 15.0.2 on ASW3344 with PID 12248 (started by spinilla in C:\Users\spinilla\Documents\workspace\generador)
+2021-06-11 09:27:06.206  INFO 12248 --- [main] c.a.s.g.GeneradorApplicationTests        : No active profile set, falling back to default profiles: default
+2021-06-11 09:27:07.022  INFO 12248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-11 09:27:07.086  INFO 12248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 2 JPA repository interfaces.
+2021-06-11 09:27:07.667  INFO 12248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-11 09:27:07.898  INFO 12248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-11 09:27:07.976  INFO 12248 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-11 09:27:08.043  INFO 12248 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-06-11 09:27:08.180  INFO 12248 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-11 09:27:08.374  INFO 12248 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-06-11 09:27:09.046  INFO 12248 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-11 09:27:09.060  INFO 12248 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-11 09:27:09.679  WARN 12248 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-11 09:27:10.423  INFO 12248 --- [main] c.a.s.g.GeneradorApplicationTests        : Started GeneradorApplicationTests in 4.57 seconds (JVM running for 5.625)
+2021-06-11 09:27:10.425  INFO 12248 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-11 09:27:10.427  INFO 12248 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-11 09:27:40.407  INFO 7508 --- [RMI TCP Connection(29)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-06-11 09:27:40.409  INFO 7508 --- [RMI TCP Connection(29)-127.0.0.1] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-06-11 09:27:40.656  INFO 7508 --- [RMI TCP Connection(29)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-11 09:27:40.657  INFO 7508 --- [RMI TCP Connection(29)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
