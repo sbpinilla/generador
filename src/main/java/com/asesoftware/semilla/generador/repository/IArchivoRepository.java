@@ -32,7 +32,7 @@ public interface IArchivoRepository extends JpaRepository<ArchivoEntity, Integer
 	
 	@Query("SELECT new com.asesoftware.semilla.generador.dto.ArchivoDTO(t.id,t.nombre,t.usuarioCreador,t.fecha, t.hora,u.nombre)"
 			+ " FROM ArchivoEntity t , UsuarioEntity u "
-			+ "WHERE t.usuarioCreador = u.id AND u.nombre like %?1%")
+			+ "WHERE t.usuarioCreador = u.id AND u.nombre = ?1")
 	List<ArchivoDTO> queryUsuarioCreadorDTO(String nombreUsuario);
 	
 

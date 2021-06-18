@@ -16,7 +16,7 @@ import com.asesoftware.semilla.generador.repository.IUsuarioRepository;
 @Service
 public class UsuarioService implements IUsuarioService {
 	
-	private static final Logger logger  = LoggerFactory.getLogger(UsuarioService.class);
+	private static final Logger logger = LoggerFactory.getLogger(UsuarioService.class);
 	
 	@Autowired
 	private IUsuarioRepository usuarioRepository;
