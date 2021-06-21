@@ -11,6 +11,7 @@ import com.asesoftware.semilla.generador.dto.ResponseDTO;
 import com.asesoftware.semilla.generador.dto.UsuarioDTO;
 import com.asesoftware.semilla.generador.entity.UsuarioEntity;
 import com.asesoftware.semilla.generador.mapper.IUsuarioMapper;
+import com.asesoftware.semilla.generador.repository.ArchivoUsuarioRepository;
 import com.asesoftware.semilla.generador.repository.IUsuarioRepository;
 
 @Service
@@ -24,6 +25,9 @@ public class UsuarioService implements IUsuarioService {
 	@Autowired
 	private IUsuarioMapper mapperUsuario;
 	
+	@Autowired
+	private ArchivoUsuarioRepository archivoUsuarioRepository;
+	
 
 	@Override
 	public ResponseDTO getAll() {
@@ -33,6 +37,9 @@ public class UsuarioService implements IUsuarioService {
 
 	@Override
 	public ResponseDTO getUsuarioById(Integer id) {
+		
+		archivoUsuarioRepository.getArchivosXUsuario(id);
+		archivoUsuarioRepository.getUsuario(id);
 				
 		Optional<UsuarioEntity> optional = usuarioRepository.findById(id);
 		
