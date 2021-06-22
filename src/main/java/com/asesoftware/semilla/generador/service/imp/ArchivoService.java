@@ -1,4 +1,4 @@
-package com.asesoftware.semilla.generador.service;
+package com.asesoftware.semilla.generador.service.imp;
 
 import java.util.List;
 import java.util.Optional;
@@ -9,38 +9,52 @@ import org.springframework.stereotype.Service;
 
 import com.asesoftware.semilla.generador.dto.ArchivoDTO;
 import com.asesoftware.semilla.generador.dto.ResponseDTO;
+import com.asesoftware.semilla.generador.dto.UsuarioDTO;
 import com.asesoftware.semilla.generador.entity.ArchivoEntity;
 import com.asesoftware.semilla.generador.mapper.IArchivoMapper;
 import com.asesoftware.semilla.generador.repository.IArchivoRepository;
+import com.asesoftware.semilla.generador.repository.IUsuarioRepository;
+import com.asesoftware.semilla.generador.service.IArchivoService;
+import com.asesoftware.semilla.generador.service.IUsuarioService;
 
 @Service
 public class ArchivoService implements IArchivoService {
 	
 	@Autowired
 	private IArchivoRepository archivoRepository;
+	
+	@Autowired
+	private IUsuarioService usuarioService;
 
 	@Autowired
 	private IArchivoMapper mapperArchivo;
-	
+		
 	@Override
 	public List<ArchivoEntity> getAll() {
-		// TODO Auto-generated method stub
+		
 		return archivoRepository.findAll();
 	}
 
 	@Override
-	public ArchivoDTO createArchivo(ArchivoDTO archivoDTO) {
+	public ResponseDTO createArchivo(ArchivoDTO archivoDTO) {
 		
-		ArchivoEntity archivoEntity = mapperArchivo.dtoToEntity(archivoDTO);
 		
-		return mapperArchivo.entityToDto(archivoRepository.save(archivoEntity));
+		UsuarioDTO usuarioDTO = usuarioService.getUsuarioDTO(archivoDTO.getUsuarioCreador());
+		
+		if (usuarioDTO != null) {
+			
+			ArchivoEntity archivoEntity = mapperArchivo.dtoToEntity(archivoDTO);
+			
+			return new ResponseDTO(mapperArchivo.entityToDto(archivoRepository.save(archivoEntity)), true, "ok", HttpStatus.OK);
+		}else {
+			return new ResponseDTO(null, false, "Usuario no existe", HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+			
 	}
 
 	@Override
 	public ArchivoDTO buscarPorId(Integer id) {
-		// TODO Auto-generated method stub
-		
-		
+	
 		Optional<ArchivoEntity> archivoEntity = archivoRepository.findById(id);
 		
 	
@@ -49,10 +63,10 @@ public class ArchivoService implements IArchivoService {
 
 	@Override
 	public ResponseDTO consultarTodosCreador(Integer usuarioCreador) {
-		// TODO Auto-generated method stub
+	
 		
 		
-		//List<ArchivoDTO> lisArchivoDTOs = mapperArchivo.listEntityToDto(archivoRepository.findByUsuarioCreador(usuarioCreador)) ;
+		// List<ArchivoDTO> lisArchivoDTOs = mapperArchivo.listEntityToDto(archivoRepository.findByUsuarioCreador(usuarioCreador)) ;
 		List<ArchivoDTO> lisArchivoDTOs = mapperArchivo.listEntityToDto(archivoRepository.queryUsuarioCreadorNativo(usuarioCreador)) ;
 
 		

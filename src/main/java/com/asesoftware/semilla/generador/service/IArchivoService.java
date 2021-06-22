@@ -11,7 +11,7 @@ public interface IArchivoService {
 	
 	public List<ArchivoEntity> getAll();
 	
-	public ArchivoDTO createArchivo(ArchivoDTO archivoDTO);
+	public ResponseDTO createArchivo(ArchivoDTO archivoDTO);
 	
 	public ArchivoDTO buscarPorId(Integer id);
 	

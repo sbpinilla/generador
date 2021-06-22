@@ -48,6 +48,7 @@ public class ArchivoUsuarioRepository {
 	}
 	
 	
+	@SuppressWarnings("unchecked")
 	public List<UsuarioDataDTO> getUsuario(Integer idUsuario ) {
 		
 		
@@ -56,7 +57,8 @@ public class ArchivoUsuarioRepository {
 				.setParameter("in_idUsuario", idUsuario);
 		
 	
-		List<Object[]> listObjects = storedProcedureQuery.getResultList();
+		List<Object[]> listObjects = (List)storedProcedureQuery.getResultList();
+		
 		
 		List<UsuarioDataDTO> dataDTOs = listObjects.stream()
 				.map(datos-> new UsuarioDataDTO((String)datos[0], (String)datos[1], (Date)datos[2]))

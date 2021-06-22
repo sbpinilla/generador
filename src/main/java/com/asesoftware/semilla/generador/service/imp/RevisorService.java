@@ -1,4 +1,4 @@
-package com.asesoftware.semilla.generador.service;
+package com.asesoftware.semilla.generador.service.imp;
 
 import java.util.Optional;
 
@@ -11,6 +11,7 @@ import com.asesoftware.semilla.generador.entity.RevisorEntity;
 import com.asesoftware.semilla.generador.entity.RevisorPK;
 import com.asesoftware.semilla.generador.mapper.IRevisorMapper;
 import com.asesoftware.semilla.generador.repository.IRevisorRepository;
+import com.asesoftware.semilla.generador.service.IRevisionService;
 
 @Service
 public class RevisorService implements IRevisionService  {

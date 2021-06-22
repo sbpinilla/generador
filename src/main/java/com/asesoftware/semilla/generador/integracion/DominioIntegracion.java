@@ -9,7 +9,6 @@ import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import com.asesoftware.semilla.generador.controller.UsuarioController;
 import com.asesoftware.semilla.generador.dto.DominioDTO;
 import com.asesoftware.semilla.generador.dto.ResponseDTO;
 
@@ -35,9 +34,9 @@ public class DominioIntegracion {
 	
 		HttpEntity<Object> request = new HttpEntity<>(dominioDTO,headers);
 		
-		ResponseDTO dto = restTemplate.postForObject(baseUrl + "/api/dominios", request, ResponseDTO.class);
 		
-		return dto;
+		
+		return restTemplate.postForObject(baseUrl + "/api/dominios", request, ResponseDTO.class);
 	}
 	
 	

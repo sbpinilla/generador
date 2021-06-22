@@ -3,10 +3,7 @@ package com.asesoftware.semilla.generador.mapper;
 import java.util.List;
 
 import org.mapstruct.Mapper;
-
-import com.asesoftware.semilla.generador.dto.ArchivoDTO;
 import com.asesoftware.semilla.generador.dto.UsuarioDTO;
-import com.asesoftware.semilla.generador.entity.ArchivoEntity;
 import com.asesoftware.semilla.generador.entity.UsuarioEntity;
 
 @Mapper(componentModel = "spring")

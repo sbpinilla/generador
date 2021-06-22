@@ -2,8 +2,7 @@ package com.asesoftware.semilla.generador.controller;
 
 import java.util.List;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -31,7 +30,7 @@ public class ArchivoController {
 	}
 	
 	@PostMapping(path = "/crear",consumes = "application/json",produces = "application/json")
-	public ArchivoDTO createArchivo(@RequestBody ArchivoDTO dto) {
+	public ResponseDTO createArchivo(@RequestBody ArchivoDTO dto) {
 		
 		return archivoService.createArchivo(dto);
 	}

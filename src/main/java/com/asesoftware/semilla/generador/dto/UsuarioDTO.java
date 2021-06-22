@@ -1,7 +1,5 @@
 package com.asesoftware.semilla.generador.dto;
 
-import java.util.List;
-
 import lombok.Data;
 
 @Data

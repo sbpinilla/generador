@@ -1,6 +1,5 @@
 package com.asesoftware.semilla.generador.repository;
 
-import java.util.Date;
 import java.util.List;
 
 

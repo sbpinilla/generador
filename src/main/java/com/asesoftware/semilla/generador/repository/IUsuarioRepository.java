@@ -4,5 +4,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.asesoftware.semilla.generador.entity.UsuarioEntity;
 
 public interface IUsuarioRepository extends JpaRepository<UsuarioEntity, Integer>  {
+	
+	public UsuarioEntity findByUsername(String username);
 
 }
