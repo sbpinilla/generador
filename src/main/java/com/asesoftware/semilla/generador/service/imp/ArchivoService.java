@@ -19,68 +19,70 @@ import com.asesoftware.semilla.generador.service.IUsuarioService;
 
 @Service
 public class ArchivoService implements IArchivoService {
-	
+
 	@Autowired
 	private IArchivoRepository archivoRepository;
-	
+
 	@Autowired
 	private IUsuarioService usuarioService;
 
 	@Autowired
 	private IArchivoMapper mapperArchivo;
-		
+
 	@Override
 	public List<ArchivoEntity> getAll() {
-		
+
 		return archivoRepository.findAll();
 	}
 
 	@Override
 	public ResponseDTO createArchivo(ArchivoDTO archivoDTO) {
-		
-		
+
+
 		UsuarioDTO usuarioDTO = usuarioService.getUsuarioDTO(archivoDTO.getUsuarioCreador());
-		
+
 		if (usuarioDTO != null) {
+		
+			
 			
 			ArchivoEntity archivoEntity = mapperArchivo.dtoToEntity(archivoDTO);
-			
 			return new ResponseDTO(mapperArchivo.entityToDto(archivoRepository.save(archivoEntity)), true, "ok", HttpStatus.OK);
+		
 		}else {
-			return new ResponseDTO(null, false, "Usuario no existe", HttpStatus.INTERNAL_SERVER_ERROR);
+			return new ResponseDTO(null, false, "usuarioCreador no existe", HttpStatus.INTERNAL_SERVER_ERROR);
 		}
-			
+
 	}
 
 	@Override
 	public ArchivoDTO buscarPorId(Integer id) {
-	
+
 		Optional<ArchivoEntity> archivoEntity = archivoRepository.findById(id);
-		
-	
+
+
 		return mapperArchivo.entityToDto(archivoEntity.get());
 	}
 
 	@Override
 	public ResponseDTO consultarTodosCreador(Integer usuarioCreador) {
-	
-		
-		
+
+
+
 		// List<ArchivoDTO> lisArchivoDTOs = mapperArchivo.listEntityToDto(archivoRepository.findByUsuarioCreador(usuarioCreador)) ;
 		List<ArchivoDTO> lisArchivoDTOs = mapperArchivo.listEntityToDto(archivoRepository.queryUsuarioCreadorNativo(usuarioCreador)) ;
 
-		
+
 		return new ResponseDTO(lisArchivoDTOs, true, "ok", HttpStatus.OK);
 	}
 
 	@Override
 	public ResponseDTO consultarTodosNombres(String nombreUsuario) {
-		
-		
+
+
 		//List<ArchivoDTO> lisArchivoDTOs = mapperArchivo.listEntityToDto(archivoRepository.queryUsuarioCreador(nombreUsuario)) ;
 		List<ArchivoDTO> lisArchivoDTOs = archivoRepository.queryUsuarioCreadorDTO(nombreUsuario);
-		
-		
+
+
 		return new ResponseDTO(lisArchivoDTOs, true, "ok", HttpStatus.OK);
 	}
 
